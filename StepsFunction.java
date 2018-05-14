@@ -239,7 +239,7 @@ public class StepsFunction //this class is used to generate data on the number o
 				}
 				if(isCycle(cycleList)) //if we have a cycle, exit the loop and record either the cycle length or the smallest value in the cycle
 				{
-					if(!cycleStyle) 
+					if(cycleStyle==false) 
 					{
 						return minimumCycleElement(cycleList).multiply(BigInteger.valueOf(-1));
 					}																			//these -1 sings on our cycle data 
