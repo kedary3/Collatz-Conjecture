@@ -177,7 +177,14 @@ public class StepsFunction //this class is used to generate data on the number o
 				list[((int)n.longValue())+index]=steps; //records the step value
 				n=n.add(one); //iterates to next integer
 			}
-			File GraphData = new File("StepsGraph" + "(" + a + "," + b + ")" + ".txt"); // this will generate a txt file in your java src file.
+			if(cyclestyle)
+			{
+			File GraphData = new File("StepsGraph" + "(" + a + "," + b + ")" + "cyclelength" + "mod" +ModuloClass + ".txt");
+			}	// this will generate a txt file in your java src file.
+			if(!cyclestyle)
+			{
+				File GraphData = new File("StepsGraph" + "(" + a + "," + b + ")" + "LowestCycleValue" + "mod" +ModuloClass + ".txt");
+			}
 			try {
 				PrintWriter f =new PrintWriter(GraphData);
 				for (int i = 0; i < list.length; i++)
