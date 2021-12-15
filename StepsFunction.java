@@ -5,8 +5,9 @@
 	import java.io.Writer;
 	import java.lang.reflect.Array;
 	import java.util.*;
+	
 	/*
-	 * 
+	 * Some interesting patterns below
 	 * 3,1
 	 * 4,4
 	 * 2,2
